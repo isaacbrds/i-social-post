@@ -1,0 +1,7 @@
+<%= form_for(@post) do |f| %>
+  <%= f.file_field :photo, class: "form-control mt-3"%>
+  
+  <%= f.text_area :subtitle, class: "form-control mt-3", placeholder: "Digite a legenda da foto"   %>
+
+  <%= f.submit "Enviar", class: "btn btn-primary mt-3" %>
+<% end %>
